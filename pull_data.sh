@@ -2,7 +2,6 @@
 
 total=$(curl -s -X POST http://127.0.0.1:17566/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"get_info","params":{"height":1}}' -H 'Content-Type: application/json' | jq '.result.height')
 
-#!/bin/bash
 file=~/Desktop/BlockchainDataExtract.csv
 if [ ! -e "$file" ]; then
 echo "Height" ',' "Difficulty" ',' "Timestamp" ',' "Nonce" ',' "transactions"  \ >> ~/Desktop/BlockchainDataExtract.csv
