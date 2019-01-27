@@ -4,7 +4,7 @@ total=$(curl -s -X POST http://127.0.0.1:17566/json_rpc -d '{"jsonrpc":"2.0","id
 
 file=~/Desktop/BlockchainDataExtract.csv
 if [ ! -e "$file" ]; then
-echo "Height" ',' "Difficulty" ',' "Timestamp" ',' "Nonce" ',' "transactions"  \ >> ~/Desktop/BlockchainDataExtract.csv
+echo "Height" ',' "Difficulty" ',' "Timestamp" ',' "Nonce" ',' "Transactions"  \ >> ~/Desktop/BlockchainDataExtract.csv
 chmod 777 ~/Desktop/BlockchainDataExtract.csv
 lines=$(1)
 else
