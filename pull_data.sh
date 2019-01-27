@@ -24,6 +24,7 @@ echo $i','$a','$b','$c','$d \ >> ~/Desktop/BlockchainDataExtract.csv
 percent=$(awk "BEGIN { pc=100*${item}/${total}; i=int(pc); print (pc-i<0.5)?i:i+1 }")
 clear
 echo $i
+echo $percent
 
 done
 
